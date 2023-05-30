@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const apiRoutes = require('./routes/apiRouter');
 const pagesRoutes = require('./routes/pagesRouter');
 
@@ -18,6 +17,7 @@ app.use('/', pagesRoutes);
 // Serve static files from the public folder
 app.use(express.static('public'));
 
+// Start the server on the port
 app.listen(PORT, () =>
     console.log(`App listening at http://localhost:${PORT}`)
 );

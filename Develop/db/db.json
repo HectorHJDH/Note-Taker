@@ -1,6 +1,14 @@
-[
+{
+  "db_notes": [
     {
-        "title":"Test Title",
-        "text":"Test text"
+      "title": "dwdw",
+      "text": "dwdw",
+      "id": "11593f8a-dd63-4300-8332-9549f172a540"
+    },
+    {
+      "title": "dw",
+      "text": "wdwd",
+      "id": "96187eb7-9809-4807-8343-16f179fa9006"
     }
-]
+  ]
+}

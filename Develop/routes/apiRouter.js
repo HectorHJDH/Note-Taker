@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
+const { createNewNote, updateDb } = require('../helpers/notes');
 const { db_notes } = require('../db/db.json');
 
 // GET /api/notes should read the db.json file and return all saved notes as JSON.
@@ -18,12 +19,9 @@ router.post('/notes', (req, res) => {
 
 // DELETE /api/notes/:id should receive a query parameter containing the id of a note to delete.
 router.delete('/notes/:id', (req, res) => {
-    const result = findById(req.params.id, notes);
-    if (result) {
-        res.json(result);
-    } else {
-        res.send(404);
-    }
+    const params = req.params.id
+    updateDb(params, db_notes);
+    res.redirect('');
 });
 
 module.exports = router;
