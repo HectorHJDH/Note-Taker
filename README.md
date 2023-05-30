@@ -3,7 +3,7 @@
 ## Description
 Application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file as database.
 
-Deployed application URL: 
+Deployed application URL: https://note-taker-ch-11.herokuapp.com/
 
 Landing Page Screenshot:
 ![Landing page](./Develop/images/Note-Taker.PNG)
